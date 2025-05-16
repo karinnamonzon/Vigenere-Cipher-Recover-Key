@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vigenère Decryption Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Vigenère Cipher Decryption</h1>
+
+  <label for="ciphertext">Enter Ciphertext (A–Z only):</label>
+  <textarea id="ciphertext" placeholder="e.g. LXFOPVEFRNHR..."></textarea>
+
+  <button onclick="analyzeCipher()">Analyze Ciphertext</button>
+
+  <div id="keyOutput" class="hidden">
+    <p><strong>Recovered Key:</strong> <span id="keyDisplay"></span></p>
+    <p>Would you like to decrypt the ciphertext?</p>
+    <button onclick="decrypt()">Yes</button>
+    <button onclick="cancel()">No</button>
+  </div>
+
+  <div id="result" class="hidden">
+    <h2>Decrypted Message</h2>
+    <pre id="decryptedText"></pre>
+  </div>
+
+  <script src="decrypt.js"></script>
+</body>
+</html>

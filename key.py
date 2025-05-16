@@ -1,4 +1,3 @@
-
 print('Enter ciphertext: ')
 ciphertext = input()
 
